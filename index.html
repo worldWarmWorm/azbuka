@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="custom-container">
+                <div class="header-top-item">
+                    <div class="header-top-item-social">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 5C0 2.23858 2.23857 0 5 0H17.26C20.0214 0 22.26 2.23857 22.26 5V17.26C22.26 20.0214 20.0214 22.26 17.26 22.26H5C2.23858 22.26 0 20.0214 0 17.26V5ZM7.86699 10.4489C6.9765 9.33384 6.3004 8.09172 5.76692 6.77428C5.57921 6.31177 5.27534 6.12377 4.82973 6.09964C4.78328 6.09715 1.99064 6.03893 1.84049 6.09735C1.59964 6.19108 1.52906 6.46339 1.60472 6.74845C1.62748 6.83358 2.4745 8.63595 2.51724 8.72157C3.3535 10.3964 4.26949 12.0235 5.42916 13.5037C6.15919 14.4356 7.00195 15.2347 8.05734 15.7998C9.30253 16.467 10.6392 16.6207 12.0185 16.5459C12.4963 16.5196 12.7678 16.2477 12.798 15.8212C12.8039 15.7396 12.9282 14.7846 13.0722 14.4209C13.2406 13.9974 13.5945 13.9364 13.9551 14.2114C14.1079 14.3277 14.2497 14.461 14.3825 14.6C14.5403 14.7652 14.6951 14.9334 14.8499 15.1016C15.1274 15.4031 15.4048 15.7046 15.6995 15.9883C16.1122 16.3854 16.6247 16.5882 17.2094 16.5909C17.2257 16.591 17.2852 16.5923 17.3765 16.5944C17.9154 16.6068 19.5612 16.6446 19.9419 16.5909C20.6496 16.4906 20.8836 15.9273 20.5048 15.3292C20.2053 14.8563 19.8555 14.4071 19.4775 13.993C19.1709 13.6576 18.8453 13.3397 18.5196 13.0219C18.2927 12.8005 18.0659 12.579 17.8454 12.3516C17.508 12.0035 17.492 11.7691 17.7233 11.3511C17.788 11.2348 17.8575 11.1202 17.9364 11.0128C18.1461 10.7269 18.3576 10.4422 18.569 10.1575C18.9811 9.60264 19.3932 9.04781 19.7926 8.48404C20.1692 7.95232 20.5208 7.39925 20.6675 6.74854C20.7303 6.47086 20.6238 6.25204 20.3555 6.16646C20.1901 6.11386 20.007 6.09735 19.8318 6.09647C18.8442 6.09334 17.8565 6.09422 16.8689 6.09647C16.3435 6.09779 16.195 6.20388 16.0012 6.69232C15.6263 7.63893 15.1909 8.55702 14.608 9.39358C14.2871 9.8535 13.9453 10.3063 13.5575 10.7088C13.2522 11.0256 12.9536 10.9155 12.8569 10.477C12.7878 10.1623 12.7642 9.83118 12.7682 9.50807C12.7737 9.02168 12.7899 8.53529 12.806 8.04881C12.8171 7.71196 12.8283 7.37506 12.836 7.03809C12.8404 6.84643 12.8239 6.65168 12.7918 6.46226C12.7299 6.09505 12.5284 5.83119 12.1523 5.74918C11.8639 5.68632 11.5693 5.66273 11.2765 5.66004C11.0909 5.6582 10.9053 5.65473 10.7196 5.65125C10.1858 5.64126 9.65162 5.63127 9.11893 5.66004C8.67591 5.68368 8.26737 5.74342 7.97411 6.11825C7.83324 6.29829 7.85361 6.47877 8.07287 6.51844C8.78288 6.64636 8.95447 7.07019 8.98074 7.55287C9.02129 8.30649 9.03819 8.80099 9.02348 9.55555C9.01811 9.84432 8.9277 10.4016 8.82918 10.6766C8.73603 10.9387 8.5199 10.994 8.29081 10.8366C8.13397 10.7292 7.9851 10.5973 7.86699 10.4489Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.6315 0.438599C9.32005 0.438599 8.90549 0.452824 7.6049 0.511757C3.17682 0.714973 0.715867 3.17186 0.512651 7.60401C0.452702 8.90561 0.438477 9.32017 0.438477 12.6316C0.438477 15.943 0.452702 16.3586 0.511634 17.6592C0.714851 22.0872 3.17174 24.5482 7.60389 24.7514C8.90549 24.8103 9.32005 24.8246 12.6315 24.8246C15.9429 24.8246 16.3584 24.8103 17.659 24.7514C22.0831 24.5482 24.5501 22.0913 24.7503 17.6592C24.8102 16.3586 24.8244 15.943 24.8244 12.6316C24.8244 9.32017 24.8102 8.90561 24.7513 7.60502C24.5521 3.181 22.0922 0.715989 17.66 0.512773C16.3584 0.452824 15.9429 0.438599 12.6315 0.438599ZM12.6315 6.37048C9.17378 6.37048 6.37041 9.17385 6.37041 12.6316C6.37041 16.0893 9.17378 18.8937 12.6315 18.8937C16.0892 18.8937 18.8926 16.0903 18.8926 12.6316C18.8926 9.17385 16.0892 6.37048 12.6315 6.37048ZM12.6314 16.6959C10.3869 16.6959 8.5671 14.8771 8.5671 12.6316C8.5671 10.3871 10.3869 8.56726 12.6314 8.56726C14.876 8.56726 16.6958 10.3871 16.6958 12.6316C16.6958 14.8771 14.876 16.6959 12.6314 16.6959ZM19.1405 4.66042C18.3317 4.66042 17.6763 5.3158 17.6763 6.12358C17.6763 6.93137 18.3317 7.58674 19.1405 7.58674C19.9483 7.58674 20.6027 6.93137 20.6027 6.12358C20.6027 5.3158 19.9483 4.66042 19.1405 4.66042Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="tel:73833754948" class="header-top-item-phone">(383) 375-49-48</a>
+                    <a href="" class="call-btn">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="custom-container">
+                <div class="header-bottom-inner">
+                    <div class="logo">
+                        <a href=""><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">О компании</a></li>
+                            <li>
+                                <a href="">
+                                    Услуги
+
+                                </a>
+                                <div class="slide-content">
+                                    <div class="slide-content-item1"></div>
+                                    <div class="slide-content-item2">
+                                        <a href="">Услуга номер 1</a>
+                                        <a href="">Услуга номер 2</a>
+                                        <a href="">Услуга номер 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Контакты</a></li>
+                            <li><a href="">Партнерам</a></li>
+                            <li><a href="">Портфолио</a></li>
+                            <li><a href="">Фотогалерея</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="mobile-menu">
+    
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="slider-block">
+        <div class="slider-block-inner">
+            <div class="slide slide1">
+                <div class="slide-wrap">
+                    <div class="phrase1">Мы создаем уютные решения</div>
+                    <div class="phrase2">от «А» до «Я»</div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-wrap">
+                    <div class="phrase1">Мы создаем уютные решения</div>
+                    <div class="phrase2">от «А» до «Я»</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="custom-container">
+            <div class="block-title">
+                <h1>Каталог</h1>
+                <div class="block-title-line"></div>
+            </div>
+        </div>
+        <div class="catalog-fon">
+            <div class="custom-container">
+                <div class="catalog-items">
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="63" viewBox="0 0 75 63" fill="none">
+                                <path d="M74.8566 0H0V5.41132H74.8566V0Z" fill="#9F9E9B" />
+                                <path d="M9.94263 7.21503H2.94751V63H9.94263V7.21503Z" fill="#9F9E9B" />
+                                <path d="M18.4116 7.21503H11.4165V63H18.4116V7.21503Z" fill="#9F9E9B" />
+                                <path d="M26.9907 7.21503H19.9956V63H26.9907V7.21503Z" fill="#9F9E9B" />
+                                <path d="M35.4596 7.21503H28.4645V63H35.4596V7.21503Z" fill="#9F9E9B" />
+                                <path d="M44.0383 7.21503H37.0432V63H44.0383V7.21503Z" fill="#9F9E9B" />
+                                <path d="M52.7274 7.21503H45.7323V63H52.7274V7.21503Z" fill="#9F9E9B" />
+                                <path d="M61.5483 7.21503H54.5532V63H61.5483V7.21503Z" fill="#9F9E9B" />
+                                <path d="M70.1271 7.21503H63.132V63H70.1271V7.21503Z" fill="#9F9E9B" />
+                                <path d="M72.7668 7.21503H72.0189V26.4186H72.7668V7.21503Z" fill="#9F9E9B" />
+                                <path d="M73.1849 27.2546H71.5352V30.7082H73.1849V27.2546Z" fill="#9F9E9B" />
+                            </svg>
+                            <h2>Вертикальные жалюзи</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="64" viewBox="0 0 86 64" fill="none">
+                                <path d="M81.9521 0H3.23816V11.3338H81.9521V0Z" fill="#9F9E9B" />
+                                <path d="M78.9008 13.1605H6.47644V17.4159H78.9008V13.1605Z" fill="#9F9E9B" />
+                                <path d="M78.9008 19.8445H6.47644V24.0999H78.9008V19.8445Z" fill="#9F9E9B" />
+                                <path d="M78.797 26.1135H6.37268V30.3688H78.797V26.1135Z" fill="#9F9E9B" />
+                                <path d="M78.797 32.7767H6.37268V37.0321H78.797V32.7767Z" fill="#9F9E9B" />
+                                <path d="M78.797 39.2532H6.37268V43.5085H78.797V39.2532Z" fill="#9F9E9B" />
+                                <path d="M78.797 45.5221H6.37268V49.7775H78.797V45.5221Z" fill="#9F9E9B" />
+                                <path d="M78.797 52.4137H6.37268V56.6691H78.797V52.4137Z" fill="#9F9E9B" />
+                                <path d="M83.7789 58.8901H2.24182V63.1455H83.7789V58.8901Z" fill="#9F9E9B" />
+                                <path d="M2.22109 2.24188H0V8.71834H2.22109V2.24188Z" fill="#9F9E9B" />
+                                <path d="M86 2.42871H83.7789V8.90518H86V2.42871Z" fill="#9F9E9B" />
+                                <path d="M81.9522 13.1605H81.0388V36.2225H81.9522V13.1605Z" fill="#9F9E9B" />
+                                <path d="M82.4296 37.2397H80.4576V41.3913H82.4296V37.2397Z" fill="#9F9E9B" />
+                            </svg>
+                            <h2>Горизонтальные жалюзи</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="63" viewBox="0 0 84 63" fill="none">
+                                <path d="M80.6856 0H3.16846V11.1615H80.6856V0Z" fill="#9F9E9B" />
+                                <path d="M77.6808 12.9604H6.35767V55.8075H77.6808V12.9604Z" fill="#9F9E9B" />
+                                <path d="M77.599 51.6168H6.27588V55.8074H77.599V51.6168Z" fill="#9F9E9B" />
+                                <path d="M82.4846 57.9948H2.18726V62.1854H82.4846V57.9948Z" fill="#9F9E9B" />
+                                <path d="M2.18733 2.18732H0V8.56531H2.18733V2.18732Z" fill="#9F9E9B" />
+                                <path d="M84.0001 2.39172H81.8127V8.76972H84.0001V2.39172Z" fill="#9F9E9B" />
+                                <path d="M80.6858 12.9604H79.7864V35.6718H80.6858V12.9604Z" fill="#9F9E9B" />
+                                <path d="M81.1764 36.6735H79.2344V40.7619H81.1764V36.6735Z" fill="#9F9E9B" />
+                            </svg>
+                            <h2>Рулонные жалюзи</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="85" height="63" viewBox="0 0 85 63" fill="none">
+                                <path d="M40 0H3V11H40V0Z" fill="#9F9E9B" />
+                                <path d="M82 0H44V11H82V0Z" fill="#9F9E9B" />
+                                <path d="M40 12H6V37H40V12Z" fill="#9F9E9B" />
+                                <path d="M79 12H44V48H79V12Z" fill="#9F9E9B" />
+                                <path d="M83.4666 58.6852H2.21338V62.9257H83.4666V58.6852Z" fill="#9F9E9B" />
+                                <path d="M82 0H3V11H82V0Z" fill="#9F9E9B" />
+                                <path d="M2.21337 2.21338H0V8.6673H2.21337V2.21338Z" fill="#9F9E9B" />
+                                <path d="M85 2.42023H82.7866V8.87415H85V2.42023Z" fill="#9F9E9B" />
+                                <path d="M84.4287 10.88H83.5186V33.8618H84.4287V10.88Z" fill="#9F9E9B" />
+                                <path d="M84.9251 34.8753H82.96V39.0124H84.9251V34.8753Z" fill="#9F9E9B" />
+                                <path d="M1.46875 10.88H0.558594V33.8618H1.46875V10.88Z" fill="#9F9E9B" />
+                                <path d="M1.96514 34.8753H0V39.0124H1.96514V34.8753Z" fill="#9F9E9B" />
+                                <rect x="3" y="12" width="2.04" height="45.56" fill="#9F9E9B" />
+                                <rect x="41" width="2" height="58" fill="#9F9E9B" />
+                                <rect x="80" y="12" width="2.04" height="45.56" fill="#9F9E9B" />
+                            </svg>
+                            <h2>Рулонные жалюзи на створки окна</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="83" height="65" viewBox="0 0 83 65" fill="none">
+                                <path d="M81 0H1V2H81V0Z" fill="#9F9E9B" />
+                                <path d="M39 31H4V34H39V31Z" fill="#9F9E9B" />
+                                <path d="M39 27H4V30H39V27Z" fill="#9F9E9B" />
+                                <path d="M39 23H4V26H39V23Z" fill="#9F9E9B" />
+                                <path d="M39 19H4V22H39V19Z" fill="#9F9E9B" />
+                                <path d="M39 15H4V18H39V15Z" fill="#9F9E9B" />
+                                <path d="M39 11H4V14H39V11Z" fill="#9F9E9B" />
+                                <path d="M39 7H4V10H39V7Z" fill="#9F9E9B" />
+                                <path d="M39 3H4V6H39V3Z" fill="#9F9E9B" />
+                                <path d="M78 19H43V22H78V19Z" fill="#9F9E9B" />
+                                <path d="M78 15H43V18H78V15Z" fill="#9F9E9B" />
+                                <path d="M78 11H43V14H78V11Z" fill="#9F9E9B" />
+                                <path d="M78 7H43V10H78V7Z" fill="#9F9E9B" />
+                                <path d="M78 3H43V6H78V3Z" fill="#9F9E9B" />
+                                <path d="M39 35H4V37H39V35Z" fill="#9F9E9B" />
+                                <path d="M39 38H4V39H39V38Z" fill="#9F9E9B" />
+                                <path d="M39 40H4V41H39V40Z" fill="#9F9E9B" />
+                                <path d="M39 42H4V43H39V42Z" fill="#9F9E9B" />
+                                <path d="M78 23H43V25H78V23Z" fill="#9F9E9B" />
+                                <path d="M78 26H43V28H78V26Z" fill="#9F9E9B" />
+                                <path d="M78 29H43V30H78V29Z" fill="#9F9E9B" />
+                                <path d="M78 31H43V32H78V31Z" fill="#9F9E9B" />
+                                <path d="M83 60H0V65H83V60Z" fill="#9F9E9B" />
+                                <rect x="1" y="3" width="2" height="56" fill="#9F9E9B" />
+                                <rect x="79" y="3" width="2" height="56" fill="#9F9E9B" />
+                                <rect x="40" y="3" width="2" height="56" fill="#9F9E9B" />
+                            </svg>
+                            <h2>Жалюзи плиссе</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="64" viewBox="0 0 86 64" fill="none"
+                                class="electro">
+                                <path d="M82.6069 0H3.24402V11.4272H82.6069V0Z" fill="#9F9E9B" />
+                                <path d="M79.808 12.384H6.19202V44.032H79.808V12.384Z" fill="#9F9E9B" />
+                                <path d="M84.4487 59.3756H2.2395V63.6661H84.4487V59.3756Z" fill="#9F9E9B" />
+                                <path d="M2.23941 2.23938H0V8.76924H2.23941V2.23938Z" fill="#9F9E9B" />
+                                <path d="M86 2.44867H83.7606V8.97853H86V2.44867Z" fill="#9F9E9B" />
+                                <rect x="3.43994" y="12.384" width="2.064" height="46.096" fill="#9F9E9B" />
+                                <rect x="80.496" y="12.384" width="2.064" height="46.096" fill="#9F9E9B" />
+                                <path
+                                    d="M40.2492 35.8926L45.6906 30.4265C45.9138 30.2033 45.7543 29.8225 45.439 29.8225H45.0051C44.7093 29.8225 44.5428 29.4806 44.727 29.2486L47.6124 25.6104C47.7966 25.3783 47.6319 25.0365 47.3343 25.0365H45.8836C45.5914 25.0365 45.4249 24.7035 45.6002 24.4697L49.2862 19.5668C49.4616 19.333 49.2951 19 49.0028 19H43.1736C43.0389 19 42.9149 19.0762 42.8565 19.1966L40.0065 24.9621C39.8896 25.1977 40.0614 25.474 40.3236 25.474H41.6379C41.9 25.474 42.0718 25.7503 41.9549 25.9859L40.0065 29.9288C39.8896 30.1644 40.0614 30.4407 40.3236 30.4407H41.5617C41.8239 30.4407 41.9939 30.7134 41.8805 30.949L39.6806 35.4888C39.5053 35.8484 39.9676 36.176 40.2492 35.8926Z"
+                                    fill="white" />
+                            </svg>
+                            <h2>Жалюзи с электроприводом</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="64" viewBox="0 0 80 64" fill="none">
+                                <path d="M78.2077 0H0.977539V11.1202H78.2077V0Z" fill="#9F9E9B" />
+                                <path d="M75.5352 12.6236H3.78003V16.61H75.5352V12.6236Z" fill="#9F9E9B" />
+                                <path d="M75.5352 17.2744H3.78003V21.2608H75.5352V17.2744Z" fill="#9F9E9B" />
+                                <path d="M75.5352 21.9252H3.78003V25.9116H75.5352V21.9252Z" fill="#9F9E9B" />
+                                <path d="M75.5352 26.576H3.78003V30.5624H75.5352V26.576Z" fill="#9F9E9B" />
+                                <path d="M75.5352 31.2268H3.78003V35.2132H75.5352V31.2268Z" fill="#9F9E9B" />
+                                <path d="M75.5352 35.8776H3.78003V39.864H75.5352V35.8776Z" fill="#9F9E9B" />
+                                <path d="M75.5352 40.5284H3.78003V44.5148H75.5352V40.5284Z" fill="#9F9E9B" />
+                                <path d="M75.5352 45.1792H3.78003V49.1656H75.5352V45.1792Z" fill="#9F9E9B" />
+                                <path d="M75.5352 49.83H3.78003V53.8164H75.5352V49.83Z" fill="#9F9E9B" />
+                                <path d="M75.5352 54.4808H3.78003V58.4672H75.5352V54.4808Z" fill="#9F9E9B" />
+                                <path d="M80 59.1316H0V63.3068H80V59.1316Z" fill="#9F9E9B" />
+                                <path d="M78.1928 12.6236H76.864V58.4672H78.1928V12.6236Z" fill="#9F9E9B" />
+                                <path d="M2.45136 12.6236H1.12256V58.4672H2.45136V12.6236Z" fill="#9F9E9B" />
+                            </svg>
+                            <h2>Рольставни</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="86" height="64" viewBox="0 0 86 64" fill="none">
+                                <path d="M82.6067 0H3.2439V11.4272H82.6067V0Z" fill="#9F9E9B" />
+                                <path d="M84.4487 59.3756H2.2395V63.6661H84.4487V59.3756Z" fill="#9F9E9B" />
+                                <path d="M2.23941 2.23938H0V8.76923H2.23941V2.23938Z" fill="#9F9E9B" />
+                                <path d="M86.0001 2.44873H83.7607V8.97859H86.0001V2.44873Z" fill="#9F9E9B" />
+                                <path d="M85.4221 11.008H84.5012V34.2601H85.4221V11.008Z" fill="#9F9E9B" />
+                                <path d="M85.9243 35.2856H83.936V39.4714H85.9243V35.2856Z" fill="#9F9E9B" />
+                                <rect x="3.43994" y="12.384" width="2.064" height="46.096" fill="#9F9E9B" />
+                                <rect x="80.4958" y="12.384" width="2.064" height="46.096" fill="#9F9E9B" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.19214 12.384H79.8081V44.032H6.19214V12.384ZM53.0833 20.8333V32.3333C53.0833 33.3875 52.2208 34.25 51.1666 34.25H39.6666C38.6125 34.25 37.75 33.3875 37.75 32.3333V20.8333C37.75 19.7792 38.6125 18.9167 39.6666 18.9167H51.1666C52.2208 18.9167 53.0833 19.7792 53.0833 20.8333ZM44.487 31.0971L42.5416 28.5L39.6666 32.3333H51.1666L47.3332 27.5417L44.487 31.0971ZM33.9166 36.1667V22.75H35.8333V36.1667H49.2499V38.0833H35.8333C34.7791 38.0833 33.9166 37.2208 33.9166 36.1667Z"
+                                    fill="#9F9E9B" />
+                            </svg>
+                            <h2>Фотопечать на жалюзи</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="83" height="64" viewBox="0 0 83 64" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 0H81V3H1V0ZM0.251221 59.687H82.8916V64H0.251221V59.687ZM1 4H4V14.4074L5 19.4289V4H7V29.4719L8 34.4934V7.43469V4H10V12.3576L11 17.3791V4H13V27.4221L14 32.4436V7.43469V4H16V12.3576L17 17.3791V4H19V27.4221L20 32.4436V4H22V42.4866L23 47.5081V7.43469V4H25V12.3576L26.4082 19.4289V4H28.4082V29.4719L29.4082 34.4934V7.43469V4H31.4082V12.3576L32.4082 17.3791V4H34.4082V27.4221L35.4082 32.4436V7.43469V4H37.4082V12.3576L38.4082 17.3791V4H40.4082V27.4221L41.4082 32.4436V4H43.4082V42.4866L44.4082 47.5081V4H46.4082V59H44.4082V52.6282L43.4082 47.6067V59H41.4082V37.5637L40.4082 32.5422V59H38.4082V52.6282L37.4082 47.6067V59H35.4082V37.5637L34.4082 32.5422V59H32.4082V54.6779L31.4082 49.6564V59H29.4082V39.6135L28.4082 34.592V59H26.4082V24.549L25 17.4777V59H23V52.6282L22 47.6067V59H20V37.5637L19 32.5422V59H17V52.6282L16 47.6067V59H14V37.5637L13 32.5422V59H11V54.6779L10 49.6565V59H8V39.6135L7 34.592V59H5V24.549L4 19.5275V59H1V4ZM38.4082 22.4992L37.4082 17.4777V42.4866L38.4082 47.5081V22.4992ZM31.4082 44.5364V17.4777L32.4082 22.4992V49.5579L31.4082 44.5364ZM17 22.4992L16 17.4777V42.4866L17 47.5081V22.4992ZM10 44.5364V17.4777L11 22.4992V49.5578L10 44.5364ZM81 4H79V59H81V4Z"
+                                    fill="#9F9E9B" />
+                            </svg>
+                            <h2>Раздвижные решетки</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="82" height="63" viewBox="0 0 82 63" fill="none">
+                                <path d="M76.659 13H4.23462V17.2554H76.659V13Z" fill="#9F9E9B" />
+                                <path d="M76.659 6H4.23462V10.2554H76.659V6Z" fill="#9F9E9B" />
+                                <path d="M76.659 0H4.23462V4.25537H76.659V0Z" fill="#9F9E9B" />
+                                <path d="M76.659 19.684H4.23462V23.9394H76.659V19.684Z" fill="#9F9E9B" />
+                                <path d="M76.5551 25.9529H4.13074V30.2083H76.5551V25.9529Z" fill="#9F9E9B" />
+                                <path d="M76.5551 32.6162H4.13074V36.8716H76.5551V32.6162Z" fill="#9F9E9B" />
+                                <path d="M76.5551 39.0927H4.13074V43.3481H76.5551V39.0927Z" fill="#9F9E9B" />
+                                <path d="M76.5551 45.3616H4.13074V49.617H76.5551V45.3616Z" fill="#9F9E9B" />
+                                <path d="M76.5551 52.2532H4.13074V56.5085H76.5551V52.2532Z" fill="#9F9E9B" />
+                                <path d="M81.537 58.7297H0V62.985H81.537V58.7297Z" fill="#9F9E9B" />
+                                <path d="M81.537 0H0V4.25537H81.537V0Z" fill="#9F9E9B" />
+                            </svg>
+                            <h2>Рафшторы</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="123" height="63" viewBox="0 0 123 63" fill="none">
+                                <path d="M103.666 0H20.4487V11.9823H103.666V0Z" fill="#9F9E9B"/>
+                                <path d="M100.787 13.6023H23.4685V17.8977H100.787V13.6023Z" fill="#9F9E9B"/>
+                                <path d="M100.787 18.6136H23.4685V22.9091H100.787V18.6136Z" fill="#9F9E9B"/>
+                                <path d="M100.787 23.625H23.4685V27.9205H100.787V23.625Z" fill="#9F9E9B"/>
+                                <path d="M100.787 28.6364H23.4685V32.9318H100.787V28.6364Z" fill="#9F9E9B"/>
+                                <path d="M100.787 33.6477H23.4685V37.9432H100.787V33.6477Z" fill="#9F9E9B"/>
+                                <path d="M100.787 38.6591H23.4685V42.9546H100.787V38.6591Z" fill="#9F9E9B"/>
+                                <path d="M100.787 43.6705H23.4685V47.9659H100.787V43.6705Z" fill="#9F9E9B"/>
+                                <path d="M100.787 48.6818H23.4685V52.9773H100.787V48.6818Z" fill="#9F9E9B"/>
+                                <path d="M100.787 53.6932H23.4685V57.9886H100.787V53.6932Z" fill="#9F9E9B"/>
+                                <path d="M100.787 58.7045H23.4685V63H100.787V58.7045Z" fill="#9F9E9B"/>
+                                <path d="M122.838 0H102.365V62.4966H122.838V0Z" fill="#9F9E9B"/>
+                                <path d="M21.5505 0H0V62.4966H21.5505V0Z" fill="#9F9E9B"/>
+                                </svg>
+                            <h2>Секционные ворота</h2>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <a href="" class="catalog-item-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="64" viewBox="0 0 33 64" fill="none">
+                                <path d="M33 0H0V2H33V0Z" fill="#9F9E9B"/>
+                                <path d="M33 62H0V64H33V62Z" fill="#9F9E9B"/>
+                                <rect width="2" height="62" fill="#9F9E9B"/>
+                                <rect x="31" width="2" height="62" fill="#9F9E9B"/>
+                                <rect x="1" y="29" width="2" height="7" fill="#9F9E9B"/>
+                                <rect x="30" y="29" width="2" height="7" fill="#9F9E9B"/>
+                                <rect x="2" y="15" width="30" height="1" fill="#9F9E9B"/>
+                                </svg>
+                            <h2>Москитные сетки </h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stocks">
+        <div class="custom-container">
+            <div class="custom-container">
+                <div class="block-title">
+                    <h1>Акции</h1>
+                    <div class="block-title-line"></div>
+                </div>
+                <div class="stocks-slider">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="custom-container">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-top-left">
+                        <span>Связаться с нами:</span>
+                        <a href="tel:73833754948">(383) 375-49-48</a>
+                        <span>|</span>
+                        <a href="mailto:azbuka154@mail.ru">azbuka154@mail.ru</a>
+                    </div>
+                    <div class="footer-top-right">
+                        <span>Мы находимся: <span class="addr">г. Новосибирск, ул.Планетная,30</span></span>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <span>
+                            &#169; 2019 www.azbuka154.ru<a href="">Политика конфиденциальности</a>
+                        </span>
+                        <div>
+                            <a href="mailto:azbuka154@mail.ru">azbuka154@mail.ru</a> электронная почта для обращений с
+                            вопросом о своих
+                            персональных данных, в том числе об их удалении.
+                        </div>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <div class="links">
+                            <a href="">Создание сайтов</a>
+                            <a href="">Продвижение сайтов</a>
+                        </div>
+                        <div class="kontur">
+                            <a href="">
+                                <img src="img/kontur.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
