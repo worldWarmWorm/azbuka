@@ -86,8 +86,7 @@ li {
         text-align: center;
 
         &:hover {
-            background-color: #fff;
-            color: #5F5F5F;
+            background-color: #FA9371;
         }
     }
 
@@ -239,6 +238,9 @@ li {
         }
     }
 
+    .border-top {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
     .footer-bottom {
         min-height: 89px;
@@ -246,7 +248,7 @@ li {
         justify-content: space-between;
         align-items: center;
         font-size: 12px;
-        position: relative;
+        
 
         .footer-bottom-left {
             max-width: 483px;
@@ -274,15 +276,6 @@ li {
             }
         }
 
-        &::before {
-            position: absolute;
-            top: 0;
-            content: '';
-            height: 1px;
-            left: -500%;
-            width: 1000%;
-            background-color: rgba(255, 255, 255, 0.2);
-        }
 
         .footer-bottom-right {
             display: flex;
@@ -520,6 +513,7 @@ a.catalog-item-link:hover svg.electro path:last-child {
 
     .left-content {
         padding-right: 15px;
+        max-width: 365px
     }
 
     .right-content {
@@ -626,5 +620,65 @@ a.catalog-item-link:hover svg.electro path:last-child {
 }
 
 // catalog.html----------------------------------
+
+// cart.html----------------------------------
+
+
+.right-content-cart {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .right-content-img,
+    .right-content-discription {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .img-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right-content-discription {
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+            color: #616161;
+
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            color: #828282;
+            padding: 15px 0 25px;
+        }
+    }
+
+    .img-top {
+        margin-bottom: 15px;
+    }
+
+    .get-btn a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 37px;
+        background-color: #149B05;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 15px;
+        color: #fff;
+        &:hover {
+            background-color: #FA9371;
+        }
+    }
+}
+
+// cart.html----------------------------------
 
 @import 'media';

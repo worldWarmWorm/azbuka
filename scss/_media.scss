@@ -1,9 +1,19 @@
-@media screen and (max-width: 1199px) {
-    
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 1050px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
 }
 
-@media screen and (min-width: 1200px) {
-    
+@media screen and (min-width: 1050px) {
+    .mobile-menu {
+        display: none !important;
+    }
 }
 
-
+@media screen and (min-width: 1200px) {}

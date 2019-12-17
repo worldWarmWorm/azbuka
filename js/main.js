@@ -20,4 +20,12 @@ $(function () {
         $(this).toggleClass('close');
     });
 
+    $("#my-mmenu").mmenu({
+        "extensions": [
+        "position-left",
+        "fx-menu-slide",
+        ]
+    },{
+        "language":"ru"
+    });
 });
