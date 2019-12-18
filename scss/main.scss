@@ -318,13 +318,17 @@ li {
         left: 28%;
 
         .phrase1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-size: 36px;
             line-height: 36px;
+            padding: 36px 15px;
             text-align: center;
             color: #484848;
             background: #fff;
             border-radius: 4px;
-            min-width: 611px;
+            max-width: 611px;
             min-height: 114px;
             display: flex;
             align-items: center;
@@ -334,6 +338,7 @@ li {
         .phrase2 {
             font-size: 44px;
             line-height: 44px;
+            padding: 15px;
             color: #fff;
             background: #FA9371;
             border-radius: 4px;
@@ -409,7 +414,6 @@ li {
 }
 
 .catalog-item {
-    width: 25%;
     padding: 15px;
     min-width: 197px;
     min-height: 215px;

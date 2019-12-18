@@ -5,8 +5,110 @@
         display: none;
     }
 
+    .header-bottom {
+        background-color: #fff;
+    }
+
     .mobile-menu {
         display: block;
+
+        a.btn-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+
+            svg path {
+                fill: #000;
+            }
+        }
+    }
+
+    .slider-block .slide {
+        min-height: 400px;
+    }
+
+    .slider-block .slide .slide-wrap {
+        left: calc(50% - 199px);
+        top: calc(50% - 108px);
+
+        .phrase1 {
+            font-size: 26px;
+            line-height: 26px;
+            padding: 15px 15px 25px;
+            min-height: 68px;
+            max-width: 396px;
+        }
+
+        .phrase2 {
+            font-size: 28px;
+            line-height: 24px;
+            min-height: 66px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 940px) {}
+
+@media screen and (max-width: 768px) {
+    .header-bottom-inner {
+        min-height: 75px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header-top-item-phone {
+        display: none;
+    }
+
+    .header-top-item {
+        justify-content: space-between;
+        min-height: 50px;
+
+        .call-btn {
+            margin-left: 0;
+            width: 139px;
+            height: 29px;
+            background-color: #149B05;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 29px;
+            text-align: center;
+        }
+    }
+
+    .slick-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .slider-block .slide .slide-wrap {
+        left: calc(50% - 102px);
+        top: calc(50% - 58px);
+
+        .phrase1 {
+            padding: 9px 9px 15px;
+            min-height: 59px;
+            max-width: 206px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        .phrase2 {
+            padding: 9px;
+            font-size: 17px;
+            line-height: 19px;
+            min-height: 42px;
+        }
+    }
+
+    .block-title h1 {
+        margin: 33px 0 8px;
+        font-size: 24px;
+        line-height: 26px
     }
 }
 
